@@ -11,7 +11,7 @@ let queued = []; // url队列
  *
  * @param {string} url 入口url
  */
-async function wander(url = 'http://wangchengkai.com', browser) {
+async function wander(url = 'http://wck.com', browser) {
   console.log('----start to process ' + url);
   try {
     const p = await browser.newPage();
@@ -47,7 +47,7 @@ async function wander(url = 'http://wangchengkai.com', browser) {
       pathname: location.pathname
     };
   }));
-  const { content, url:clearUrl, fullUrl, pathname, hrefs } = context;
+  const { html:content, url:clearUrl, fullUrl, pathname, hrefs } = context;
   _hrefs = hrefs;
   await static(clearUrl, pathname, content);
   } catch(e) {

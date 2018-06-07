@@ -12,7 +12,7 @@ const UA_MAP = {
 
 
 const ua = UA_MAP[process.argv[2]] || UA_MAP.default;
-const url = process.argv[3] || 'http://wangchengkai.com';
+const url = process.argv[3] || 'http://wck.com';
 console.log('当前使用UA：', ua.name);
 
 async function doRequest(){

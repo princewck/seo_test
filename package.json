@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "baidu": "node ./src/tasks/grap.js baidu",
-    "google": "node ./src/tasks/grap.js baidu"
+    "baidu": "node ./src/tasks/crawler.js baidu",
+    "google": "node ./src/tasks/crawler.js google"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +16,10 @@
     "lodash": "^4.17.10",
     "puppeteer": "^1.4.0",
     "superagent": "^3.8.3"
+  },
+  "dependencies": {
+    "fs-extra": "^6.0.1",
+    "install": "^0.11.0",
+    "npm": "^6.1.0"
   }
 }
